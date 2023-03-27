@@ -1,11 +1,11 @@
+/// <reference types="audio" />
+/// <reference types="react-app-env" />
+/// <reference types="window" />
+
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "target": "es6",
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -18,9 +18,9 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "baseUrl": "src",
+    "typeRoots": ["./node_modules/@types", "./src/types"]
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src"]
 }
