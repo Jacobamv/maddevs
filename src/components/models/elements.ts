@@ -39,3 +39,7 @@ export interface PersonalLinkFooterProps {
   text: string;
   image: any;
 }
+
+export interface ModalProps {
+  styles?: React.CSSProperties;
+}

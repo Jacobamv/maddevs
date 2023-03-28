@@ -1,10 +1,14 @@
+import Modal from "components/elements/Modal";
 import { TeamDisplay as TeamDisplayTemplate } from "components/templates";
 
 function TeamDisplay() {
   return (
-    <div>
-      <TeamDisplayTemplate />
-    </div>
+    <>
+      <div>
+        <TeamDisplayTemplate />
+      </div>
+      <Modal />
+    </>
   );
 }
 

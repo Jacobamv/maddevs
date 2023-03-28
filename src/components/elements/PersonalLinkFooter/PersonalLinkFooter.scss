@@ -1,0 +1,24 @@
+@use "../../../styles/abstracts" as *;
+
+.elements {
+  &__personal-footer {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(66, 41, 220, 0.7);
+    width: 79px;
+    height: 19px;
+    border-radius: 31px;
+    align-items: center;
+
+    img {
+      height: 100%;
+    }
+
+    p {
+      font-size: 8px;
+      margin-left: 5px;
+      font-weight: 700;
+      color: white;
+    }
+  }
+}
