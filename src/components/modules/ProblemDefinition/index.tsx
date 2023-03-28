@@ -1,4 +1,5 @@
 import { Button, Header, Link, Text } from "components/elements";
+import ReactPlayer from "react-player";
 import Sticky from "../Sticky";
 import "./ProblemDefinition.scss";
 
@@ -7,7 +8,13 @@ function ProblemDefinition() {
     <>
       <Sticky isNav={false}>MadDevs</Sticky>
       <div className='modules__problem-definition'>
-        {/* video */}
+        <ReactPlayer
+          playing
+          url='videos/1.MP4'
+          width='100%'
+          height='100%'
+          controls={true}
+        />{" "}
         <Header>Problem: The Digital Divide</Header>
         <Text>
           The digital divide is a global problem that refers to the unequal
