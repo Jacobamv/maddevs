@@ -78,7 +78,6 @@ export default function Intro() {
                 </button>
               </div>
             </div>
-          </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="container2">
