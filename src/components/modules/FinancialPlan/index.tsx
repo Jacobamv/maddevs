@@ -6,7 +6,7 @@ import ReactPlayer from "react-player";
 function FinancialPlan() {
   return (
     <>
-      <Sticky isNav={false}>MadDevs</Sticky>
+      <Sticky isNav={true}>MadDevs</Sticky>
       <div className='modules__problem-resolution'>
         <ReactPlayer
           playing
