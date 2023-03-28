@@ -8,7 +8,7 @@ function FinancialPlan() {
     <>
       <Sticky isNav={false}>MadDevs</Sticky>
       <div className='modules__problem-resolution'>
-        <ReactPlayer playing url='videos/1.MP4'
+        <ReactPlayer playing url='videos/6.MP4'
           width='100%'
           height='100%'
           controls={true}

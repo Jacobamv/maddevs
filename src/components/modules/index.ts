@@ -5,7 +5,8 @@ import Intro from "./intro";
 import ProblemDefinition from "components/modules/ProblemDefinition";
 import ProblemResolution from "components/modules/ProblemResolution";
 import FinancialPlan from "./FinancialPlan";
-
+import Marketing from "./Marketing";
+import BusinessAD from "./BusinessAD";
 export {
   Sticky,
   Icons,
@@ -13,5 +14,7 @@ export {
   Intro,
   ProblemDefinition,
   ProblemResolution,
-  FinancialPlan
+  FinancialPlan,
+  Marketing,
+  BusinessAD
 };

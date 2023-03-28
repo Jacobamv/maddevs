@@ -1,5 +1,5 @@
 import { Routes as Switch, Route } from "react-router-dom";
-import { IntroPage, ProblemDefinition, TeamDisplay } from "pages";
+import { BusinessADPage, IntroPage, MarketingPage, ProblemDefinition, TeamDisplay } from "pages";
 import { FinancialPlan, ProblemResolution, Sticky } from "components/modules";
 import { Button, Header, Link, Text } from "components/elements";
 import ReactPlayer from "react-player";
@@ -41,9 +41,9 @@ export function Routes() {
       <Route path='/problem-definition' element={<ProblemDefinition />} />
       <Route path='/problem-resolution' element={<ProblemResolution />} />
       <Route path='/management' element={<Management />} />
-      <Route path='/business' element={<Management />} />
+      <Route path='/business' element={<BusinessADPage />} />
       <Route path='/finance' element={<FinancialPlan />} />
-      <Route path='/marketing' element={<Management />} />
+      <Route path='/marketing' element={<MarketingPage />} />
     </Switch>
   );
 }
