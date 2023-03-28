@@ -1,5 +1,9 @@
-function Intro() {
-  return <div>intro</div>;
+import Intro from "components/modules/intro";
+
+function IntroPage() {
+  return (
+    <Intro/>
+  )
 }
 
-export default Intro;
+export default IntroPage;
