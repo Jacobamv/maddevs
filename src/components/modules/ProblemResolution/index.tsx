@@ -1,4 +1,5 @@
 import { Button, Header, Link, Text } from "components/elements";
+import ReactPlayer from "react-player";
 import Sticky from "../Sticky";
 import "./ProblemResolution.scss";
 
@@ -7,7 +8,13 @@ function ProblemResolution() {
     <>
       <Sticky isNav={false}>MadDevs</Sticky>
       <div className='modules__problem-resolution'>
-        {/* video */}
+        <ReactPlayer
+          playing
+          url='videos/2.MP4'
+          width='100%'
+          height='100%'
+          controls={true}
+        />{" "}
         <Header>Solution: ConnectEd</Header>
         <Text>
           ConnectEd is a social enterprise that aims to bridge the digital
