@@ -1,11 +1,11 @@
-import { Icons, Sticky } from "components/modules";
+import { Icons, PersonalLink, Sticky } from "components/modules";
 import { Text } from "components/elements";
 import "./TeamDisplay.scss";
 
 function TeamDisplay() {
   return (
     <div className='templates__team-display'>
-      <Sticky>MadDevs</Sticky>
+      <Sticky isNav={true}>MadDevs</Sticky>
       <Icons />
       <Text>
         <div>
@@ -16,6 +16,7 @@ function TeamDisplay() {
           <div>Enjoy!</div>
         </div>
       </Text>
+      <PersonalLink />
     </div>
   );
 }

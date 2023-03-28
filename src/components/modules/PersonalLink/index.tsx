@@ -7,6 +7,7 @@ import azim from "assets/images/azim.png";
 import jacob from "assets/images/jacob.png";
 import artem from "assets/images/artem.png";
 import { PersonalLinkElement, PersonalLinkFooter } from "components/elements";
+import "./PersonalLink.scss";
 
 function PersonalLink() {
   const linksArr = [
@@ -20,14 +21,14 @@ function PersonalLink() {
     const { image, linkImage, text } = link;
 
     return (
-      <div>
+      <div key={text}>
         <PersonalLinkElement linkImage={linkImage} />
         <PersonalLinkFooter image={image} text={text} />
       </div>
     );
   });
 
-  return <div></div>;
+  return <div className='modules__personal-link'>{links}</div>;
 }
 
 export default PersonalLink;
