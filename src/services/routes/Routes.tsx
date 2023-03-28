@@ -1,10 +1,10 @@
 import { Routes as Switch, Route } from "react-router-dom";
-import { Intro, TeamDisplay } from "pages";
+import { IntroPage, TeamDisplay } from "pages";
 
 export function Routes() {
   return (
     <Switch>
-      <Route path='/' element={<Intro />} />
+      <Route path='/' element={<IntroPage />} />
       <Route path='/team-display' element={<TeamDisplay />} />
     </Switch>
   );
