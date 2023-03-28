@@ -4,6 +4,7 @@ import PersonalLink from "components/modules/PersonalLink";
 import Intro from "./intro";
 import ProblemDefinition from "components/modules/ProblemDefinition";
 import ProblemResolution from "components/modules/ProblemResolution";
+import FinancialPlan from "./FinancialPlan";
 
 export {
   Sticky,
@@ -12,4 +13,5 @@ export {
   Intro,
   ProblemDefinition,
   ProblemResolution,
+  FinancialPlan
 };
