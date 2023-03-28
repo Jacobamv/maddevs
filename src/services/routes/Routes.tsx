@@ -46,7 +46,7 @@ function Business() {
       <div className='modules__problem-definition'>
         <ReactPlayer
           playing
-          url='videos/3.MP4'
+          url='videos/5.MP4'
           width='100%'
           height='100%'
           controls={true}
@@ -82,7 +82,7 @@ function Marketing() {
       <div className='modules__problem-definition'>
         <ReactPlayer
           playing
-          url='videos/3.MP4'
+          url='videos/4.MP4'
           width='100%'
           height='100%'
           controls={true}
