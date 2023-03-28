@@ -7,7 +7,7 @@ import ReactPlayer from "react-player";
 function Management() {
   return (
     <>
-      <Sticky isNav={false}>MadDevs</Sticky>
+      <Sticky isNav={true}>MadDevs</Sticky>
       <div className='modules__problem-definition'>
         <ReactPlayer
           playing
@@ -25,15 +25,6 @@ function Management() {
           and deadlines, maintaining transparent communication with
           stakeholders, and identifying potential challenges to mitigate risks.
         </Text>
-        <Link
-          styles={{
-            color: "white",
-            textDecoration: "none",
-          }}
-          to='/problem-resolution'
-        >
-          <Button>Next</Button>
-        </Link>
       </div>
     </>
   );
@@ -42,7 +33,7 @@ function Management() {
 function Business() {
   return (
     <>
-      <Sticky isNav={false}>MadDevs</Sticky>
+      <Sticky isNav={true}>MadDevs</Sticky>
       <div className='modules__problem-definition'>
         <ReactPlayer
           playing
@@ -61,15 +52,6 @@ function Business() {
           revenue, profit margin, customer acquisition cost, and customer
           lifetime value.
         </Text>
-        <Link
-          styles={{
-            color: "white",
-            textDecoration: "none",
-          }}
-          to='/problem-resolution'
-        >
-          <Button>Next</Button>
-        </Link>
       </div>
     </>
   );
@@ -78,7 +60,7 @@ function Business() {
 function Marketing() {
   return (
     <>
-      <Sticky isNav={false}>MadDevs</Sticky>
+      <Sticky isNav={true}>MadDevs</Sticky>
       <div className='modules__problem-definition'>
         <ReactPlayer
           playing
@@ -95,15 +77,6 @@ function Marketing() {
           beneficiaries and partners, and measuring success through website
           traffic, leads, conversions, and customer feedback.
         </Text>
-        <Link
-          styles={{
-            color: "white",
-            textDecoration: "none",
-          }}
-          to='/problem-resolution'
-        >
-          <Button>Next</Button>
-        </Link>
       </div>
     </>
   );
