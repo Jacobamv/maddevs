@@ -1,0 +1,18 @@
+.elements {
+  &__icon {
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 12vw;
+      margin: 6px;
+    }
+    p {
+      font-size: 10px;
+      font-weight: 700;
+    }
+  }
+}

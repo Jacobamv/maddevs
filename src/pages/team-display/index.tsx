@@ -1,5 +1,11 @@
+import { TeamDisplay as TeamDisplayTemplate } from "components/templates";
+
 function TeamDisplay() {
-  return <div>TeamDisplay</div>;
+  return (
+    <div>
+      <TeamDisplayTemplate />
+    </div>
+  );
 }
 
 export default TeamDisplay;

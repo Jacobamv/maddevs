@@ -1,0 +1,25 @@
+@use "../../../styles/abstracts" as *;
+
+.modules {
+  &__sticky {
+    position: fixed;
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $bgDark;
+
+    h1 {
+      color: $secondary;
+      font-size: 160%;
+      font-weight: 700;
+      font-family: "Varela" sans-serif;
+    }
+
+    button {
+      position: absolute;
+      left: 10px;
+    }
+  }
+}

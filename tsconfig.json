@@ -1,6 +1,6 @@
-/// <reference types="audio" />
 /// <reference types="react-app-env" />
-/// <reference types="window" />
+/// <reference types="svg" />
+/// <reference types="png" />
 
 {
   "compilerOptions": {

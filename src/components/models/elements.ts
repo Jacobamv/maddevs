@@ -22,7 +22,20 @@ export interface LinkProps {
 }
 
 export interface TextProps {
-  handleClick: () => void;
   styles?: React.CSSProperties;
   children: React.ReactNode;
+}
+
+export interface IconProps {
+  children: React.ReactNode;
+  styles?: React.CSSProperties;
+}
+
+export interface PersonalLinkElementProps {
+  linkImage: any;
+}
+
+export interface PersonalLinkFooterProps {
+  text: string;
+  image: any;
 }

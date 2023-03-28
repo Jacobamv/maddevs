@@ -1,0 +1,19 @@
+.templates {
+  &__team-display {
+    text-align: center;
+
+    > p {
+      margin-top: 24px;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      line-height: 140%;
+
+      > div {
+        width: 80%;
+      }
+    }
+  }
+}
