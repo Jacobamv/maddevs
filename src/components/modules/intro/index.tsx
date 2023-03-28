@@ -7,11 +7,14 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { useSwiper } from 'swiper/react';
 import React from "react";
+import { useNavigate } from "react-router-dom";
+
 export default function Intro() {
   const [SwiperVar, setSwiperVar] = React.useState(useSwiper())
+  const navigate = useNavigate()
   return (
 
-    <div>
+    <div className="Introbody">
   
       <>
       <Swiper
@@ -69,7 +72,7 @@ export default function Intro() {
           <div className="container2">
               <div className="wrap">
                 
-                <div className="Circle">
+                <div className="Circle planet">
                     <ThirdIcon/>
                 </div>
                 <h1 className="title" >Save planet?</h1>
@@ -80,7 +83,7 @@ export default function Intro() {
                   <div className="dot"></div>
                   <div className="dot active"></div>
                 </div>
-                <button type="submit" onClick={() => SwiperVar.slideNext()} className="btn" >Let’s start!</button>
+                <button type="submit" onClick={() => {navigate("/team-display")}} className="btn" >Let’s start!</button>
               </div>
 
           </div>
