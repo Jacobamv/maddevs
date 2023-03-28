@@ -6,24 +6,30 @@ import ya from "assets/images/ya.png";
 import azim from "assets/images/azim.png";
 import jacob from "assets/images/jacob.png";
 import artem from "assets/images/artem.png";
-import { PersonalLinkElement, PersonalLinkFooter } from "components/elements";
+import {
+  Link,
+  PersonalLinkElement,
+  PersonalLinkFooter,
+} from "components/elements";
 import "./PersonalLink.scss";
 
 function PersonalLink() {
   const linksArr = [
-    { text: "Marketing", image: ya, linkImage: link1 },
-    { text: "Business AD", image: jacob, linkImage: link2 },
-    { text: "Management", image: azim, linkImage: link3 },
-    { text: "Financial", image: artem, linkImage: link4 },
+    { text: "Marketing", image: ya, linkImage: link1, link: "marketing" },
+    { text: "Business AD", image: jacob, linkImage: link2, link: "business" },
+    { text: "Management", image: azim, linkImage: link3, link: "management" },
+    { text: "Financial", image: artem, linkImage: link4, link: "finance" },
   ];
 
-  const links = linksArr.map((link) => {
-    const { image, linkImage, text } = link;
+  const links = linksArr.map((linkName) => {
+    const { image, linkImage, text, link } = linkName;
 
     return (
       <div key={text}>
-        <PersonalLinkElement linkImage={linkImage} />
-        <PersonalLinkFooter image={image} text={text} />
+        <Link to={`/${linkName}`}>
+          <PersonalLinkElement linkImage={linkImage} />
+          <PersonalLinkFooter image={image} text={text} />
+        </Link>
       </div>
     );
   });
