@@ -7,11 +7,14 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { useSwiper } from "swiper/react";
 import React from "react";
-import { Link } from "components/elements";
+import { useNavigate } from "react-router-dom";
+
 export default function Intro() {
-  const [SwiperVar, setSwiperVar] = React.useState(useSwiper());
+  const [SwiperVar, setSwiperVar] = React.useState(useSwiper())
+  const navigate = useNavigate()
   return (
-    <div>
+
+    <div className="Introbody">
       <>
         <Swiper
           onSwiper={(sw) => {
@@ -75,12 +78,13 @@ export default function Intro() {
                 </button>
               </div>
             </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className='container2'>
-              <div className='wrap'>
-                <div className='Circle'>
-                  <ThirdIcon />
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="container2">
+              <div className="wrap">
+                
+                <div className="Circle planet">
+                    <ThirdIcon/>
                 </div>
                 <h1 className='title'>Save planet?</h1>
                 <p className='desc'>
@@ -92,15 +96,7 @@ export default function Intro() {
                   <div className='dot'></div>
                   <div className='dot active'></div>
                 </div>
-                <Link to='/problem-definition'>
-                  <button
-                    type='submit'
-                    onClick={() => SwiperVar.slideNext()}
-                    className='btn'
-                  >
-                    Let’s start!
-                  </button>
-                </Link>
+                <button type="submit" onClick={() => {navigate("/team-display")}} className="btn" >Let’s start!</button>
               </div>
             </div>
           </SwiperSlide>
