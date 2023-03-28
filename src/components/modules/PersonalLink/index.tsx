@@ -26,7 +26,7 @@ function PersonalLink() {
 
     return (
       <div key={text}>
-        <Link to={`/${linkName}`}>
+        <Link to={`/${link}`}>
           <PersonalLinkElement linkImage={linkImage} />
           <PersonalLinkFooter image={image} text={text} />
         </Link>
