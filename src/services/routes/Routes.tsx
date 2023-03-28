@@ -7,7 +7,7 @@ import ReactPlayer from "react-player";
 function Management() {
   return (
     <>
-      <Sticky isNav={false}>MadDevs</Sticky>
+      <Sticky isNav={true}>MadDevs</Sticky>
       <div className='modules__problem-definition'>
         <ReactPlayer
           playing
@@ -42,7 +42,7 @@ function Management() {
 function Business() {
   return (
     <>
-      <Sticky isNav={false}>MadDevs</Sticky>
+      <Sticky isNav={true}>MadDevs</Sticky>
       <div className='modules__problem-definition'>
         <ReactPlayer
           playing
@@ -78,7 +78,7 @@ function Business() {
 function Marketing() {
   return (
     <>
-      <Sticky isNav={false}>MadDevs</Sticky>
+      <Sticky isNav={true}>MadDevs</Sticky>
       <div className='modules__problem-definition'>
         <ReactPlayer
           playing

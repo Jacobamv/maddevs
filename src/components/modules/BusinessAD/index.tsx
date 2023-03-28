@@ -6,7 +6,7 @@ import ReactPlayer from 'react-player'
 function BusinessAD() {
   return (
     <>
-      <Sticky isNav={false}>MadDevs</Sticky>
+      <Sticky isNav={true}>MadDevs</Sticky>
       <div className='modules__problem-resolution'>
         <ReactPlayer playing url='videos/5.MP4'
           width='100%'
