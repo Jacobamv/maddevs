@@ -85,3 +85,33 @@
     font-size: 40px;
     line-height: 110%;
 }
+
+.globe {
+    border: 2px solid #4229DC;
+    border-radius: 50%;
+    height: 140px;
+    left: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 140px;
+    
+    .earth_round {
+      animation: rotation 5s linear 0s infinite;
+      
+      path {
+        stroke: #4229DC;
+      }
+    }
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: translateX(0);
+    }
+    
+    from {
+      transform: translateX(-50%);
+    }
+  }
