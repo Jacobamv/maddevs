@@ -21,7 +21,7 @@ function PersonalLink() {
     const { image, linkImage, text } = link;
 
     return (
-      <div>
+      <div key={text}>
         <PersonalLinkElement linkImage={linkImage} />
         <PersonalLinkFooter image={image} text={text} />
       </div>

@@ -5,7 +5,7 @@ import "./TeamDisplay.scss";
 function TeamDisplay() {
   return (
     <div className='templates__team-display'>
-      <Sticky>MadDevs</Sticky>
+      <Sticky isNav={true}>MadDevs</Sticky>
       <Icons />
       <Text>
         <div>

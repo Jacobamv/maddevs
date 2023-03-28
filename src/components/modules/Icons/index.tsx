@@ -47,7 +47,7 @@ function Icons() {
   const iconComponents = personList.map((person) => {
     const { icon, text, description, qualities, name, color } = person;
     return (
-      <Icon>
+      <Icon key={color}>
         <img
           onClick={() => {
             dispatch(
