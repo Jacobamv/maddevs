@@ -8,7 +8,7 @@ function Marketing() {
     <>
       <Sticky isNav={true}>MadDevs</Sticky>
       <div className='modules__problem-resolution'>
-        <ReactPlayer playing url='videos/5.MP4'
+        <ReactPlayer playing url='videos/4.MP4'
           width='100%'
           height='100%'
           controls={true}
