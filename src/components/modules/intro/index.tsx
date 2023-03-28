@@ -74,7 +74,7 @@ export default function Intro() {
                   onClick={() => SwiperVar.slideNext()}
                   className='btn'
                 >
-                  Let’s start!
+                  Next
                 </button>
               </div>
             </div>
@@ -96,7 +96,7 @@ export default function Intro() {
                   <div className='dot'></div>
                   <div className='dot active'></div>
                 </div>
-                <button type="submit" onClick={() => {navigate("/problem-definition")}} className="btn" >Let’s start!</button>
+                <button type="submit" onClick={() => {navigate("/problem-definition")}} className="btn" >Next</button>
               </div>
             </div>
           </SwiperSlide>
